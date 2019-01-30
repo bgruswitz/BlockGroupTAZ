@@ -1,6 +1,6 @@
 # BlockGroupTAZ
 
-These procedures were created to establish the current status of one-to-one and nesting relationships in our current 2010 Block Groups and 2010 TAZs. Establishing this relationship allows a prioritization framework for block group delineation revisions for the US Census Bureau’s 2020 Participant Statistical Areas Program (PSAP). Since TAZs will no longer be a geography reported by the Census Transportation Planning Products (CTPP) in post-2020 releases--but block groups will be a reported geography--we are trying to achieve as much alignment of 2020 block groups as possible with our TAZ geography. Determining where one-to-one and one-to-many relationships exist already allows us to focus first on the bigger lift of aligning geographies where block group and TAZ boundaries diverge to a larger degree.
+This tool was created to establish the current status of one-to-one and nesting relationships in our current 2010 Block Groups and 2010 TAZs. Establishing this relationship allows a prioritization framework for block group delineation revisions for the US Census Bureau’s 2020 Participant Statistical Areas Program (PSAP). Since TAZs will no longer be a geography reported by the Census Transportation Planning Products (CTPP) in post-2020 releases--but block groups will be a reported geography--we are trying to achieve as much alignment of 2020 block groups as possible with our TAZ geography. Determining where one-to-one and one-to-many relationships exist already allows us to focus first on the bigger lift of aligning geographies where block group and TAZ boundaries diverge to a larger degree.
 
 The ***Python script*** located here in GitHub is available for people who wish to modify the script for their purposes or are comfortable in a Python environment. 
 
@@ -21,6 +21,7 @@ Beyond the relationship classifications, these tables will sum the population of
 * Above [<600], 
 * Below [>3000], 
 * or within [600-3000]
+
 the population thresholds for standard block groups in the 2020 PSAP criteria. 
 
 Additional fields are provided for identifying the one more many related geographies of the opposite dataset. That is, bg2taz.csv will show unique records of each block group (blkgrp_id) and the numbered TAZ columns (TAZ_1, TAZ_2, ...TAZ_11) on the far right and taz2bg.csv will show unique records of each TAZ (taz_id) and the numbered block group columns (blkgrp_1, blkgrp_2, ...blkgrp_13).
