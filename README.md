@@ -14,15 +14,15 @@ It’s important to note that this is a tabular procedure, rather than a GIS fun
 * No Population
 
 There are two output CSVs that result from the procedure:
-bg2taz.csv - a table that’s joinable to a block group shapefile or other table of block groups that can classify the data into the relationships above
-taz2bg.csv - a table that’s joinable to a TAZ shapefile or other table of TAZs that can classify the data into the relationships above
+* _bg2taz.csv_ - a table that’s joinable to a block group shapefile or other table of block groups that can classify the data into the relationships above
+* _taz2bg.csv_ - a table that’s joinable to a TAZ shapefile or other table of TAZs that can classify the data into the relationships above
 
-Beyond the relationship classifications, these tables will sum the population of each record (“pop” field) and indicate in the “pop_class” field whether that population is 
+Beyond the relationship classifications, these tables will sum the population of each record (“pop” field) and indicate in the “pop_class” field whether that population is...
 * Above [<600], 
 * Below [>3000], 
-* or within [600-3000]
+* or within [600-3000]...
 
-the population thresholds for standard block groups in the 2020 PSAP criteria. 
+...the population thresholds for standard block groups in the 2020 PSAP criteria. 
 
 Additional fields are provided for identifying the one more many related geographies of the opposite dataset. That is, bg2taz.csv will show unique records of each block group (blkgrp_id) and the numbered TAZ columns (TAZ_1, TAZ_2, ...TAZ_11) on the far right and taz2bg.csv will show unique records of each TAZ (taz_id) and the numbered block group columns (blkgrp_1, blkgrp_2, ...blkgrp_13).
 
